@@ -4,7 +4,7 @@
 1. Download all the requirements 
 2. Put all your needed info in settings(such as Secret_key and email from which you gonna send emails)
 ```
-SECRET_KEY = '###'
+SECRET_KEY = '##'
 
 ```
 ```
