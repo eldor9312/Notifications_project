@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-cp&mp1=6hx=8f4m)h_nzswe1v(-=2-ejjbuig#p_%xj73u4k^y'
+SECRET_KEY = '###'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -216,11 +216,11 @@ ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-DEFAULT_FROM_EMAIL = "prodaldeda@yandex.ru"
+DEFAULT_FROM_EMAIL = "###"
 
 EMAIL_HOST = 'smtp.yandex.ru'  # адрес сервера Яндекс-почты для всех один и тот же
 EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = 'prodaldeda'  # ваше имя пользователя, например, если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
-EMAIL_HOST_PASSWORD = 'sgeecmskqyzwgpsh'  # пароль от почты
+EMAIL_HOST_USER = '###'  # ваше имя пользователя, например, если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
+EMAIL_HOST_PASSWORD = '###'  # пароль от почты
 EMAIL_USE_SSL = True
 
