@@ -78,24 +78,6 @@ class NotificationDelete(DeleteView):
     success_url = reverse_lazy('notifications_list')
 
 
-# class MyNotifications(ListView):
-#     model = User,Notification,Response
-#     template_name = 'personal_page.html'
-#     context_object_name = 'mynotifications'
-#
-# class ResponseCreate(CreateView):
-#     model = Response
-#     form_class = ResponseForm
-#     context_object_name = 'responses'
-#     template_name = 'all_notifications.html'
-#     def form_valid(self, form):
-#         response = form.save(commit=False)
-#         response.responded_user = self.request.user
-#         response.notification = self.request.notification.id
-#         return super().form_valid(form)
-
-
-
 def get_profile_page(request):
     user = request.user
     all_notfs = Notification.objects.filter(creator=user)
