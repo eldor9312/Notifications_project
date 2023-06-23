@@ -1,0 +1,19 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+    <h1>
+        Notification page
+    </h1>
+    <div>
+        <h4>{{ notification_detailed.title }}</h4>
+        <p>{{ notification_detailed.description|safe }}</p>
+        <p>{{ notification_detailed.category }}</p>
+        <p>{{ notification_detailed.creation_date }}</p>
+    </div>
+
+   <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Сохранить">
+    </form>
+   {% endblock content %}
