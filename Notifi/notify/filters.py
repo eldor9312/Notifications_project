@@ -6,17 +6,6 @@ from django_filters import FilterSet, DateFromToRangeFilter, ChoiceFilter, Model
 from django_filters.widgets import RangeWidget
 
 from .models import Notification,Response, User
-#
-
-# def requested_projects(request):
-#     if request is None:
-#         return Notification.objects.none()
-#     return Notification.objects.filter(user_fkey=request.user)
-
-# def get_user(self):
-#     user = self.request.user
-#     queryset = Notification.objects.filter(creator=user)
-#     return queryset
 
 def get_notfs_by_user(request):
     if request is None:
